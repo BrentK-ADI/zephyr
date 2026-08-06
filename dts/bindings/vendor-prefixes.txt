@@ -266,6 +266,7 @@ fii	Foxconn Industrial Internet
 fintek	Feature Integration Technology Inc.
 firefly	Firefly
 fitipower	Fitipower Integrated Technology Inc.
+flextechakt	Flextech AKT
 flysky	FlySky
 fobe	FoBE Studio
 focaltech	FocalTech Systems Co.,Ltd
