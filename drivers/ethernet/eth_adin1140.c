@@ -590,6 +590,7 @@ static int adin1140_send_frame(const struct device *dev, struct net_pkt *pkt)
 		/* Get parity bit and place chunk header in Tx buffer */
 		hdr |= FIELD_PREP(OA_DATA_HDR_P, oa_tc6_get_parity(hdr));
 
+		memset(ctx->oa_tx_buf, 0, sizeof(uint32_t) + tc6->cps);
 		*(uint32_t *)&ctx->oa_tx_buf[frame_len] = sys_cpu_to_be32(hdr);
 		frame_len += sizeof(uint32_t);
 
